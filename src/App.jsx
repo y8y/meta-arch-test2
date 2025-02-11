@@ -1,11 +1,8 @@
-import './App.css'
-import DynamicForm from './DynamicForm'
+import "./App.css";
+import DynamicForm from "./DynamicForm";
 
 function App() {
-
-  return (
-    <DynamicForm></DynamicForm>
-  )
+  return <DynamicForm></DynamicForm>;
 }
 
-export default App
+export default App;

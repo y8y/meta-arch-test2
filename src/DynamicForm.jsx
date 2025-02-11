@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 const metadata = {
   title: "用户管理",
@@ -10,28 +10,28 @@ const metadata = {
       label: "用户名",
       name: "username",
       placeholder: "请输入用户名",
-      required: true
+      required: true,
     },
     {
       type: "email",
       label: "邮箱",
       name: "email",
       placeholder: "请输入邮箱地址",
-      required: true
+      required: true,
     },
     {
       type: "password",
       label: "密码",
       name: "password",
       placeholder: "请输入密码",
-      required: true
+      required: true,
     },
     {
       type: "button",
       label: "提交",
-      action: "submit"
-    }
-  ]
+      action: "submit",
+    },
+  ],
 };
 
 function DynamicForm() {
@@ -50,7 +50,11 @@ function DynamicForm() {
       <h1 className="text-2xl font-bold mb-4 text-center">{metadata.title}</h1>
       <form className="grid grid-cols-1 gap-4">
         {metadata.fields.map((field, index) => {
-          if (field.type === "text" || field.type === "email" || field.type === "password") {
+          if (
+            field.type === "text" ||
+            field.type === "email" ||
+            field.type === "password"
+          ) {
             return (
               <div key={index}>
                 <label className="block text-sm font-medium mb-1">
