@@ -47,7 +47,7 @@ function DynamicForm() {
 
   return (
     <div className="p-4 max-w-lg mx-auto">
-      <h1 className="text-2xl font-bold mb-4">{metadata.title}</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center">{metadata.title}</h1>
       <form className="grid grid-cols-1 gap-4">
         {metadata.fields.map((field, index) => {
           if (field.type === "text" || field.type === "email" || field.type === "password") {
